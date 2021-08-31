@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+ web:
+    container_name: saaspp
+    image: saas_web:0.3 
+    restart: always
+    ports:
+     - "8080:8080"
+    depends_on:
+      - api
+ api:
+    container_name: api
+    image: saas_api:0.2
+    command: python manage.py runserver 0.0.0.0:8000
+    restart: always
+    ports:
+     - "8000:8000"

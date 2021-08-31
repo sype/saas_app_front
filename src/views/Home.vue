@@ -3,7 +3,7 @@
     <section class="hero is-medium is-dark mb-6">
         <div class="hero-body has-text-centered">
             <p class="title mb-6">
-                Welcome to Djacket
+                Welcome to Karisimbi
             </p>
             <p class="subtitle">
                 The best jacket store online
@@ -42,7 +42,7 @@ export default {
   mounted() {
     this.getLatestProducts()
 
-    document.title = 'Home | Djackets'
+    document.title = 'Home | Karisimbi'
   },
   methods: {
     async getLatestProducts() {
